@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Service Booking</title>
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <!-- Laundry Booking Form Section -->
+  <section class="contact-section">
+    <div class="form-container">
+      <h2>Book Your Laundry Service</h2>
+      <p>Fill out the form below and schedule your pickup today!</p>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select id="service" required>
+            <option value="">Choose a service</option>
+            <option>Dry Cleaning</option>
+            <option>Wash & Fold</option>
+            <option>Ironing</option>
+            <option>Pickup & Delivery</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Notes</label>
+          <textarea id="message" rows="4" placeholder="Any specific instructions?"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

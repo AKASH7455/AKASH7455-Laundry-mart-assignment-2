@@ -1,0 +1,160 @@
+/* 🌈 Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #207BFF, skyblue);
+  background-size: 400% 400%;
+ animation: gradientBG 8s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧺 Contact Section */
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* 📦 Form Container */
+.form-container {
+  background: #207BFF;
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 40px 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.3);
+}
+
+/* 🧾 Title & Subtitle */
+.form-container h2 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 📋 Form Group */
+.form-group {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* ✨ Inputs, Select, Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: #f0f8ff;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+/* 💠 Submit Button */
+.submit-btn {
+  padding: 15px 80px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #34bfe5, #207BFF);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to left, #34bfe5, #207BFF);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: yellow;
+}
+
+/* 📱 Responsive Design */
+
+/* ✅ Small Phones (max 480px) */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 5px 10px;
+    max-width: 90%;
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+  }
+
+  .form-container p {
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Medium Phones (481px - 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  .form-container {
+    padding: 30px 25px;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+  }
+
+  .submit-btn {
+    padding: 14px 50px
+  }
